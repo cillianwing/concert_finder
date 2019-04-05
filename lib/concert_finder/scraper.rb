@@ -1,6 +1,4 @@
-require 'pry'
-
-class Scraper
+class ConcertFinder::Scraper
 
   def get_main_page
     doc = Nokogiri::HTML(open("https://www.songkick.com/metro_areas/9179-us-austin"))
