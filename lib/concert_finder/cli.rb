@@ -9,8 +9,8 @@ class ConcertFinder::CLI
   def start
     puts "1. Date"
     puts "2. Venue"
-    puts "3. Next 7 days"
-    puts "Please enter a number 1-3 to show upcoming concerts in Austin, TX by date, venue, or all concerts in the next 7 days."
+    puts "3. Today's Concerts"
+    puts "Please enter a number 1-3 to show upcoming concerts in Austin, TX by date, venue, or today's concerts."
     input = gets.strip.to_i
 
     if input == 1
@@ -18,12 +18,12 @@ class ConcertFinder::CLI
       input = gets.strip
       # method to return concerts for specified date
     elsif input == 2
-      # some venue method
       venues
+      # scrape and list concerts for venue that was selected in CLI#venues method
     elsif input == 3
-      # method to list concerts for next 7 days
+      # method to list today's concerts
     else
-      puts "Please enter a number 1-3."
+      puts "Please enter a valid number 1-3."
     end
   end
 

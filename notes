@@ -1,0 +1,11 @@
+This gem will allow the user to view upcoming concerts in Austin, TX given by date (or date range) or venue.
+
+Scope (Initial):
+ - CLI will interact with the user to show them upcoming concerts in Austin, TX
+ - User will be able to enter a specific date, date range, or a venue
+    -> If venue is selected, they will be able to further enter a date range or just show all upcoming
+ - Scrapers needed:
+    -> main page (no date filters)
+    -> page with date filters applied
+    -> page for venues (each)
+    -> page for venue with date filters applied
